@@ -1,0 +1,26 @@
+{
+  "@context": "https://w3id.org/did/v1",
+  "id": "did:web:veramo.dev",
+  "publicKey": [
+    {
+      "id": "did:web:veramo.dev#0405aa19bb98a5fd29c15a730cb5064ca128dea19247b896b1a7bdad0b4bccccda9b47366cd1359e740d938e5a47d7bed0501150e8a1623805ac47c489421b1506",
+      "type": "Secp256k1VerificationKey2018",
+      "controller": "did:web:veramo.dev",
+      "publicKeyHex": "0405aa19bb98a5fd29c15a730cb5064ca128dea19247b896b1a7bdad0b4bccccda9b47366cd1359e740d938e5a47d7bed0501150e8a1623805ac47c489421b1506"
+    }
+  ],
+  "authentication": [
+    {
+      "type": "Secp256k1SignatureAuthentication2018",
+      "publicKey": "did:web:veramo.dev#0405aa19bb98a5fd29c15a730cb5064ca128dea19247b896b1a7bdad0b4bccccda9b47366cd1359e740d938e5a47d7bed0501150e8a1623805ac47c489421b1506"
+    }
+  ],
+  "service": [
+    {
+      "id": "did:web:veramo.dev#msg",
+      "type": "Messaging",
+      "serviceEndpoint": "https://veramo.dev/messaging",
+      "description": "Handles incoming POST messages"
+    }
+  ]
+}
